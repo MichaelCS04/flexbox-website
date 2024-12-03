@@ -1,0 +1,46 @@
+body {
+    font: Roboto;
+    
+  }
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+.header {
+    background: #1F2937;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+
+}
+
+.logo{
+    color: #f9f8fa;
+    font-size: 24px;
+    align-self: center;
+}
+
+.right{
+    align-self: center;
+    flex-wrap: wrap;
+}
+.left, .right {
+    display: flex;
+    gap: 16px;
+  }
+/*hero*/
+main {
+    margin-top: 52px;
+    padding: 16px;
+  }
