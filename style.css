@@ -147,6 +147,7 @@ body {
     align-items: center;
     font-size: 36px;
     background-color: #E5E7EB;
+    flex-wrap: wrap;
 }
 
 .excerpt {
