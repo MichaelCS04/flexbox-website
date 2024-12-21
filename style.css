@@ -1,9 +1,36 @@
 body {
-    font: Roboto;
-    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .body {
+    flex: 1;
   }
 
-ul {
+
+.header {
+    background: #1f2937;
+    color: white;
+    box-sizing:border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+ 
+
+  ul {
     list-style-type: none;
     display: flex;
     margin: 0;
@@ -11,36 +38,197 @@ ul {
     gap: 16px;
 }
 
-.header {
-    background: #1F2937;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 52px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 200px;
-
-}
-
 .logo{
-    color: #f9f8fa;
+    color: #f9faf8;
     font-size: 24px;
+}
+
+
+
+
+
+.hero{
+    background: #1f2937;
+    box-sizing: border-box;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom:50px ;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.hero .left {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: flex-start; /* Aligns them to the left */
+    gap: 16px; /* Adds spacing between the text and subtext */
+    height: 180px;
+    width: 450px;
+    padding-bottom: 40px;
+}
+
+.hero .right{
+    box-sizing: border-box;
+    margin-top: 10px;
+    align-self: flex-start;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.main-text{
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.subtext{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+#sign-up{
+    color: #f9faf8;
+    background-color: #3882F6;
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 100px;
+    height: 300px;
+}
+
+.hero .right img {
+    width: 500px;
+    height: 240px ;
+}
+
+.information .info img{
+    width: 100px;
+    height: 100px;
+    border-color: #3882F6;
+    border-style: groove;
+    border-radius: 6px;
+}
+
+
+
+
+.title{
+    text-align: center;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: #f9faf8;
+}
+.information{
+    display: flex;
+    justify-content: center;
+    gap: 52px; 
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #f9faf8;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+
+.info {
+    max-width: 200px;
+}
+
+.quote {
+    height: 352px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    background-color: #E5E7EB;
+}
+
+.excerpt {
+    text-align: left;
+    font-style: italic;
+    max-width: 800px;
+    margin-bottom: 10px;
+}
+
+.author {
+    font-weight: bold;
+    max-width: 800px;
+    margin-left:350px;
+}
+
+
+
+.call-to-action{
+    height: 300px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#f9faf8;
+
+}
+
+.box{
+    
+    box-sizing: border-box;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom:50px ;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    background-color: #3882F6;
+    padding: 20px;
+    width: 900px;
+    height: 120px;
+
+}
+
+.box .left-side {
+    justify-content: center;
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: flex-start;
+}
+.bold{
+    font-size: large;
+    font-weight: bold;
+}
+.box .right-side {
+    margin-left: 120px;
     align-self: center;
 }
 
-.right{
-    align-self: center;
-    flex-wrap: wrap;
+#button-2{
+    color: #f9faf8;
+    background-color: #3882F6;
+    border-color: #E5E7EB;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 30px;
+    width: 100px;
+    font-size: medium;
 }
-.left, .right {
+
+
+
+
+
+
+
+
+.footer {
+    height: 52px;
+    background: #1f2937;
+    color: #f9faf8;
     display: flex;
-    gap: 16px;
-  }
-/*hero*/
-main {
-    margin-top: 52px;
-    padding: 16px;
+    align-items: center;
+    justify-content: center;
   }
